@@ -4,13 +4,14 @@ import javax.persistence.*;
 
 
 @Entity
+@Table(name = "property")
 public class Property {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(nullable = false)
+    @Column(name = "id",nullable = false)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(name = "name",nullable = false)
     private String nome;
 
     public Long getId() {

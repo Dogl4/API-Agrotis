@@ -3,13 +3,14 @@ package br.com.dogla.agrotis.models;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "laboratory" )
 public class Laboratory {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(nullable = false)
+    @Column(name = "id" ,nullable = false)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(name = "name",nullable = false)
     private String nome;
 
     public Long getId() {
