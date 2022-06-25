@@ -1,8 +1,8 @@
 # API - Teste Back-end
 
 ## Descrição do projeto
-Uma API com metodos **CRUD** e aqruitetura *REST* em Java usando String Boot, gerenciamento de pedidos.
-Esta foi minha primeira vez vendo a linguagem: Java, Maven, String Boot, a IDEA IntelliJ e asdf.
+Uma **API** com metodos **CRUD** e aqruitetura **REST** em **Java** usando **String Boot**, para gerenciamento de pedidos.
+Esta foi minha primeira vez vendo a linguagem Java, Maven, String Boot, IDEA IntelliJ e asdf.
 
 ## Screenshot
 | ![Screenshot](src/image/db.png "Imagem do banco de dados.") |
@@ -11,7 +11,7 @@ Esta foi minha primeira vez vendo a linguagem: Java, Maven, String Boot, a IDEA 
 
 ##  Para iniciar
 1. Tenha o Java, Maven e o Postman instalado em sua máquina.
-2. Para baixar este projeto via git rode no terminal: `git@github.com:Dogl4/Back-end-teste.git` ou [zip](https://github.com/Dogl4/Back-end-teste/archive/refs/heads/main.zip "Download Zipado | Back-end-teste")
+2. Para baixar este projeto via git rode no terminal: `git@github.com:Dogl4/Back-end-teste.git` ou faça o download por [zip](https://github.com/Dogl4/Back-end-teste/archive/refs/heads/main.zip "Download Zipado | Back-end-teste")
 3. Variaveis de ambiente: *environment*
 
 |chave            | valor                                                             |
@@ -20,7 +20,7 @@ Esta foi minha primeira vez vendo a linguagem: Java, Maven, String Boot, a IDEA 
 |`MYSQL_URL`      | <mysql://localhost:3306/api-agrotis>                              |
 |`MYSQL_USER`     | <seu_usuario_mysql>                                               |
 |`MYSQL_PASSWORD` | <sua_senha_do_mysql>                                              |
-4. Crie a tabela manualmente, no banco mysql: 
+4. Crie o banco manualmente, dentro do mysql: 
 ```mysql
 Create database	`api-agrotis`;
 ```
@@ -44,10 +44,11 @@ Na raiz do projeto tem um arquivo chamado: `api-agrotis.postman_collection.json`
 | ![Screenshot](src/image/routes.png "Imagem das rotas.") | ![Screenshot](src/image/exemplo.png "Imagem de exemplo das rotas.") |
 |---------------------------------------------------------|---------------------------------------------------------------------|
 | _enpoints_                                              | _exemplo_                                                           |
+
 **Obs.:** Projeto em desenvolvimento ainda. Algumas funcionalidades, podem não funcionar corretamente. Relacionamentos entre entidades ainda não implementado.
 
 ## Aprendizado
-Gostei da linguagem Java, realmente sinônimo de **POO**, tanto os getters, setters e as interfaces, facilitam a programação. Adorei a library Lombok, que faz o mapeamento das propriedades automaticamente, ao inves de fazer manualmente(getters, setters), se bem que a IDEA intelliJ é muito bom para fazer isso(primeira vez usando ela, amei, recomendo para quem for codar em java).
+Gostei da linguagem Java, realmente sinônimo de **POO**, tanto os getters, setters e as interfaces, facilitam a programação. Adorei a library Lombok, que faz o mapeamento das propriedades automaticamente, ao inves de fazer manualmente(getters, setters), se bem que a IDEA intelliJ é muito bom para fazer isso(primeira vez usando ela, amei, recomendo para quem for codar em java). Primeiro projetinho em Java! 🏁 =]
   
 | <img alt="Imagem de uma parte do código." height="420em" src="src/image/aprendizado.png" /> |
 |---------------------------------------------------------------------------------------------|
