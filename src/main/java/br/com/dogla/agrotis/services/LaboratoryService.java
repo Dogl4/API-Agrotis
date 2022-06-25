@@ -14,6 +14,10 @@ public class LaboratoryService {
     @Autowired
     private ILaboratory iLaboratory;
 
+    public Laboratory createLaboratory(Laboratory laboratory) {
+        return iLaboratory.save(laboratory);
+    }
+
     public List<Laboratory> listAllLaboratories() {
         return iLaboratory.findAll();
     }
