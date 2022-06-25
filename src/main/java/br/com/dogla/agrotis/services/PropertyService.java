@@ -36,7 +36,7 @@ public class PropertyService {
             propertyDao.setId(property.getId());
             return iProperty.save(propertyDao);
         } else {
-            throw new java.lang.Error("Propriedade não encontrada.");
+            throw new java.lang.Error("Property not found.");
         }
     }
 
@@ -44,7 +44,7 @@ public class PropertyService {
         if (iProperty.existsById(id)) {
             iProperty.deleteById(id);
         } else {
-            throw new java.lang.Error("Propriedade nem existia.");
+            throw new java.lang.Error("Property not found.");
         }
     }
 }

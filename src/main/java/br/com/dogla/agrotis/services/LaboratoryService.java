@@ -25,4 +25,23 @@ public class LaboratoryService {
     public Optional<Laboratory> getByIdLaboratory(Long id) {
         return iLaboratory.findById(id);
     }
+
+    public Laboratory updateLaboratory(Long id, Laboratory laboratory) {
+        Laboratory laboratoryDao = new Laboratory();
+        if (iLaboratory.existsById(id)) {
+            laboratoryDao.setNome(laboratory.getNome());
+            laboratoryDao.setId(laboratory.getId());
+            return iLaboratory.save(laboratoryDao);
+        } else {
+            throw new java.lang.Error("Laboratory not found.");
+        }
+    }
+
+    public void deleteByIdLaboratory(Long id) {
+        if (iLaboratory.existsById(id)) {
+            iLaboratory.deleteById(id);
+        } else {
+            throw new java.lang.Error("Laboratory not found.");
+        }
+    }
 }

@@ -4,6 +4,7 @@ import br.com.dogla.agrotis.models.Laboratory;
 import br.com.dogla.agrotis.services.LaboratoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -30,5 +31,25 @@ public class LaboratoryController {
     @RequestMapping(value = "/{laboratoryId}", method = RequestMethod.GET)
     public Optional<Laboratory> getById(@PathVariable("laboratoryId") Long laboratoryId) {
         return laboratoryService.getByIdLaboratory(laboratoryId);
+    }
+
+    @RequestMapping(value = "/{laboratoryId}", method = RequestMethod.PUT)
+    public ResponseEntity<?> update(@PathVariable("laboratoryId") Long laboratoryId, @RequestBody Laboratory laboratory) {
+        try {
+            Laboratory laboratory1 = laboratoryService.updateLaboratory(laboratoryId, laboratory);
+            return ResponseEntity.status(HttpStatus.CREATED).body(laboratory1);
+        } catch (Error efe) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(efe.getMessage());
+        }
+    }
+
+    @RequestMapping(value = "/{laboratoryId}", method = RequestMethod.DELETE)
+    public ResponseEntity<?> delete(@PathVariable("laboratoryId") Long laboratoryId) {
+        try {
+            laboratoryService.deleteByIdLaboratory(laboratoryId);
+            return ResponseEntity.status(HttpStatus.NO_CONTENT).body("");
+        } catch (Error efe) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(efe.getMessage());
+        }
     }
 }
