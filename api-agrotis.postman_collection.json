@@ -151,7 +151,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"nome\": \"Osborn Agro\"\n}",
+					"raw": "{\n    \"nome\": \"Agro Skynet\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -346,7 +346,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"status\": \"Ainda não implementado\"\n}",
+					"raw": "{\n    \"message\": \"Ainda não implementado.\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -376,7 +376,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"message\": \"Ainda não implementado.\"\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"

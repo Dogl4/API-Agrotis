@@ -5,8 +5,9 @@ Uma API com metodos **CRUD** e aqruitetura *REST* em Java usando String Boot, ge
 Esta foi minha primeira vez vendo a linguagem: Java, Maven, String Boot, a IDEA IntelliJ e asdf.
 
 ## Screenshot
-![Screenshot](src/image/db.png "Imagem do banco de dados.")  
-_Modelo_
+| ![Screenshot](src/image/db.png "Imagem do banco de dados.") |
+|-------------------------------------------------------------|
+| _Modelo_                                                    |
 
 ##  Para iniciar
 1. Tenha o Java, Maven e o Postman instalado em sua máquina.
@@ -23,31 +24,34 @@ _Modelo_
 ```mysql
 Create database	`api-agrotis`;
 ```
-5. Na raiz do projeto tem um arquivo chamado: `api-agrotis.postman_collection.json`, com a collection do postman. Use algum dos seguintes programas para fazer a requisição:
-- [Postman](https://www.postman.com/). Recomendo.
+5. Use algum dos seguintes programas para fazer a requisição:
+- [Postman](https://www.postman.com/) (_recomendo_)
 - [Insomnia](https://insomnia.rest/)
 - [Thunder Client](https://www.thunderclient.com/)
 6. Comandos para quem não usa IDEA própria para java, para iniciar a aplicação.
 - Instale as dependencias `mvn install`
 - Rode a aplicação na porta: http://localhost:8080 : `mvn spring-boot:run`
 
-## Routas
+## Rotas
+Na raiz do projeto tem um arquivo chamado: `api-agrotis.postman_collection.json`, com a collection do postman.
 - `/api/property` (POST, GET)
 - `/api/property/{id}` (GET, PUT, DELETE)
 - `/api/laboratory` (POST, GET)
 - `/api/laboratory/{id}`  (GET, PUT, DELETE)
-- `/api/solicitation` (POST, GET) _em desenvolvimento_
-- `/api/solicitation/{id}` (PUT, DEL) _em desenvolvimento_
+- `/api/solicitation` (POST, GET)
+- `/api/solicitation/{id}` (PUT, DEL) (_metodo **PUT** em desenvolvimento_)
 
-![Screenshot](src/image/routes.png "Imagem das rotas.")  
-_enpoints_
+| ![Screenshot](src/image/routes.png "Imagem das rotas.") | ![Screenshot](src/image/exemplo.png "Imagem de exemplo das rotas.") |
+|---------------------------------------------------------|---------------------------------------------------------------------|
+| _enpoints_                                              | _exemplo_                                                           |
+**Obs.:** Projeto em desenvolvimento ainda. Algumas funcionalidades, podem não funcionar corretamente. Relacionamentos entre entidades ainda não implementado.
 
 ## Aprendizado
 Gostei da linguagem Java, realmente sinônimo de **POO**, tanto os getters, setters e as interfaces, facilitam a programação. Adorei a library Lombok, que faz o mapeamento das propriedades automaticamente, ao inves de fazer manualmente(getters, setters), se bem que a IDEA intelliJ é muito bom para fazer isso(primeira vez usando ela, amei, recomendo para quem for codar em java).
   
-<img alt="Imagem de uma parte do código." height="420em" src="src/image/aprendizado.png" />
-
-_Uma parte do código_
+| <img alt="Imagem de uma parte do código." height="420em" src="src/image/aprendizado.png" /> |
+|---------------------------------------------------------------------------------------------|
+| _Uma parte do código_                                                                       |
 
 ## Refêrencias | Tecnologias utilizadas
 - [Java openjdk-11.0.2](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html "Java openjdk-11.0.2")
@@ -62,5 +66,6 @@ _Uma parte do código_
 - [Postman](https://www.postman.com/ "Postman")
 - [asdf](https://github.com/asdf-vm/asdf "asdf")
 
-![Screenshot](src/image/base-do-projeto.png "Baseado neste setup inicial.")  
-_Dependencias_
+| ![Screenshot](src/image/base-do-projeto.png "Baseado neste setup inicial.") |
+|-----------------------------------------------------------------------------|
+| _Dependencias_                                                              |
