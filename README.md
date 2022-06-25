@@ -23,8 +23,8 @@ _Modelo_
 ```mysql
 Create database	`api-agrotis`;
 ```
-6. Na raiz do projeto tem um arquivo chamado: `Agrotis.postman_collection.json`, com a collection do postman. Use algum dos seguintes programas para fazer a requisição:
-- [Postman](https://www.postman.com/). Recomendo, tem
+5. Na raiz do projeto tem um arquivo chamado: `Agrotis.postman_collection.json`, com a collection do postman. Use algum dos seguintes programas para fazer a requisição:
+- [Postman](https://www.postman.com/). Recomendo.
 - [Insomnia](https://insomnia.rest/)
 - [Thunder Client](https://www.thunderclient.com/)
 6. Comandos para quem não usa IDEA própria para java, para iniciar a aplicação.
@@ -33,10 +33,13 @@ Create database	`api-agrotis`;
 
 ## Aprendizado
 Gostei da linguagem Java, realmente sinônimo de **POO**, tanto os getters, setters e as interfaces, facilitam a programação. Adorei a library Lombok, que faz o mapeamento das propriedades automaticamente, ao inves de fazer manualmente(getters, setters), se bem que a IDEA intelliJ é muito bom para fazer isso(primeira vez usando ela, amei, recomendo para quem for codar em java).
-![Screenshot](src/image/aprendizado.png "Imagem de uma parte do código.")
+  
+<img alt="Imagem de uma parte do código." height="420em" src="src/image/aprendizado.png" />
+
 _Uma parte do código_
 
 ## Refêrencias | Tecnologias utilizadas
+
 - [Java openjdk-11.0.2](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html "Java openjdk-11.0.2")
 - [Maven 3.8.5](https://maven.apache.org/download.cgi "Maven 3.8.5")
 - [Spring-Boot 2.7.1](https://start.spring.io/ "Spring-Boot 2.7.1")
