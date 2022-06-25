@@ -14,12 +14,12 @@ Esta foi minha primeira vez vendo a linguagem Java, Maven, String Boot, IDEA Int
 2. Para baixar este projeto via git rode no terminal: `git@github.com:Dogl4/Back-end-teste.git` ou faça o download por [zip](https://github.com/Dogl4/Back-end-teste/archive/refs/heads/main.zip "Download Zipado | Back-end-teste")
 3. Variaveis de ambiente: *environment*
 
-|chave            | valor                                                             |
-|-----------------|-------------------------------------------------------------------|
-|`APP_URL`        | <mysql://localhost:api-agrotis?serverTimezone=UTC?useSSL=false>   |
-|`MYSQL_URL`      | <mysql://localhost:3306/api-agrotis>                              |
-|`MYSQL_USER`     | <seu_usuario_mysql>                                               |
-|`MYSQL_PASSWORD` | <sua_senha_do_mysql>                                              |
+|chave            | valor                                                                 |
+|-----------------|-----------------------------------------------------------------------|
+|`APP_URL`        | jdbc:mysql://localhost:api-agrotis?serverTimezone=UTC?useSSL=false    |
+|`MYSQL_URL`      | jdbc:mysql://localhost:3306/api-agrotis                               |
+|`MYSQL_USER`     | <seu_usuario_mysql>                                                   |
+|`MYSQL_PASSWORD` | <sua_senha_do_mysql>                                                  |
 4. Crie o banco manualmente, dentro do mysql: 
 ```mysql
 Create database	`api-agrotis`;
