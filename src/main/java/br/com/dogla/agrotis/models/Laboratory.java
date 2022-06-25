@@ -17,4 +17,8 @@ public class Laboratory {
 
     @Column(name = "name",nullable = false)
     private String nome;
+
+//    @ManyToOne
+//    @JoinColumn(name = "solicitation_id")
+//    private Solicitation solicitation;
 }

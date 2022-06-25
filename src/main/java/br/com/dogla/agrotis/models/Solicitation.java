@@ -23,17 +23,19 @@ public class Solicitation {
         @Column(name = "date_end", nullable = false)
         private String dataFinal;
 
-        @Column(name = "cnpj", nullable = false)
+        @Column(name = "cnpj", nullable = false, length = 14)
         private String cnpj;
 
         @Column(name = "observation", nullable = false)
         private String observacoes;
 
-        @ManyToOne(cascade = CascadeType.REFRESH)
-        @JoinColumn(name = "id_property", nullable = false, foreignKey = @ForeignKey(name = "fk_property_solicitation"), referencedColumnName = "id")
-        private Property infoPropriedade;
+//        @OneToMany(cascade = CascadeType.ALL)
+//        private List<Property> infoPropriedade;
+        @Column(name = "property")
+        private Integer infoPropriedade;
 
-        @ManyToOne(cascade = CascadeType.REFRESH)
-        @JoinColumn(name = "id_laboratory", nullable = false, foreignKey = @ForeignKey(name = "fk_laboratory_solicitation"), referencedColumnName = "id")
-        private Property laboratorio;
+//        @OneToMany(cascade = CascadeType.ALL)
+//        private List<Laboratory> laboratorio;
+        @Column(name = "laboratory")
+        private Integer laboratorio;
 }
