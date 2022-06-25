@@ -1,7 +1,7 @@
 # API - Teste Back-end
 
 ## Descrição do projeto
-Uma **API** com metodos **CRUD** e aqruitetura **REST** em **Java** usando **String Boot**, para gerenciamento de pedidos.
+Uma **API** com **JAVA** e **String Boot**, no modelo **CRUD** e **REST**, para gerenciamento de solicitações.
 Esta foi minha primeira vez vendo a linguagem Java, Maven, String Boot, IDEA IntelliJ e asdf.
 
 ## Screenshot
