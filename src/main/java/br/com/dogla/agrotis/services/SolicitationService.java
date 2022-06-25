@@ -22,7 +22,16 @@ public class SolicitationService {
         return iSolicitation.findAll();
     }
 
-    public Optional<Solicitation> getByIdSolicitation(Long id) {
-        return iSolicitation.findById(id);
+    public Solicitation getByIdSolicitation(Long id) {
+        return iSolicitation.findById(id).get();
+    }
+
+    public Solicitation updateSolicitation(Long id, Solicitation solicitation) {
+        Solicitation solicitation1 = this.getByIdSolicitation(id);
+        return iSolicitation.save(solicitation1);
+    }
+
+    public void deleteByIdSolicitation(Long id) {
+        iSolicitation.deleteById(id);
     }
 }
