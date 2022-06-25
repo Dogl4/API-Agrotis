@@ -10,26 +10,37 @@ _Modelo_
 
 ##  Para iniciar
 1. Tenha o Java, Maven e o Postman instalado em sua máquina.
-2. Para baixar este projeto via git rode no terminal: `git clone git@github.com:Dogl4/API-Agrotis.git`
+2. Para baixar este projeto via git rode no terminal: `git@github.com:Dogl4/Back-end-teste.git` ou [zip](https://github.com/Dogl4/Back-end-teste/archive/refs/heads/main.zip "Download Zipado | Back-end-teste")
 3. Variaveis de ambiente: *environment*
 
-|chave            |valor                                                                  |
-|-----------------|-----------------------------------------------------------------------|
-|`APP_URL`        |<mysql://localhost:api-agrotis?serverTimezone=UTC?useSSL=false>|
-|`MYSQL_URL`      |<mysql://localhost:3306/api-agrotis>                           |
-|`MYSQL_USER`     |<seu_usuario_mysql>                                                    |
-|`MYSQL_PASSWORD` |<sua_senha_do_mysql>                                                   |
+|chave            | valor                                                             |
+|-----------------|-------------------------------------------------------------------|
+|`APP_URL`        | <mysql://localhost:api-agrotis?serverTimezone=UTC?useSSL=false>   |
+|`MYSQL_URL`      | <mysql://localhost:3306/api-agrotis>                              |
+|`MYSQL_USER`     | <seu_usuario_mysql>                                               |
+|`MYSQL_PASSWORD` | <sua_senha_do_mysql>                                              |
 4. Crie a tabela manualmente, no banco mysql: 
 ```mysql
 Create database	`api-agrotis`;
 ```
-5. Na raiz do projeto tem um arquivo chamado: `Agrotis.postman_collection.json`, com a collection do postman. Use algum dos seguintes programas para fazer a requisição:
+5. Na raiz do projeto tem um arquivo chamado: `api-agrotis.postman_collection.json`, com a collection do postman. Use algum dos seguintes programas para fazer a requisição:
 - [Postman](https://www.postman.com/). Recomendo.
 - [Insomnia](https://insomnia.rest/)
 - [Thunder Client](https://www.thunderclient.com/)
 6. Comandos para quem não usa IDEA própria para java, para iniciar a aplicação.
 - Instale as dependencias `mvn install`
 - Rode a aplicação na porta: http://localhost:8080 : `mvn spring-boot:run`
+
+## Routas
+- `/api/property` (POST, GET)
+- `/api/property/{id}` (GET, PUT, DELETE)
+- `/api/laboratory` (POST, GET)
+- `/api/laboratory/{id}`  (GET, PUT, DELETE)
+- `/api/solicitation` (POST, GET) _em desenvolvimento_
+- `/api/solicitation/{id}` (PUT, DEL) _em desenvolvimento_
+
+![Screenshot](src/image/routes.png "Imagem das rotas.")  
+_enpoints_
 
 ## Aprendizado
 Gostei da linguagem Java, realmente sinônimo de **POO**, tanto os getters, setters e as interfaces, facilitam a programação. Adorei a library Lombok, que faz o mapeamento das propriedades automaticamente, ao inves de fazer manualmente(getters, setters), se bem que a IDEA intelliJ é muito bom para fazer isso(primeira vez usando ela, amei, recomendo para quem for codar em java).
@@ -39,7 +50,6 @@ Gostei da linguagem Java, realmente sinônimo de **POO**, tanto os getters, sett
 _Uma parte do código_
 
 ## Refêrencias | Tecnologias utilizadas
-
 - [Java openjdk-11.0.2](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html "Java openjdk-11.0.2")
 - [Maven 3.8.5](https://maven.apache.org/download.cgi "Maven 3.8.5")
 - [Spring-Boot 2.7.1](https://start.spring.io/ "Spring-Boot 2.7.1")
@@ -48,7 +58,7 @@ _Uma parte do código_
 - [Spring-Data-JPA](https://spring.io/projects/spring-data-jpa "Spring-Data-JPA")
 - [MySQL Driver](https://dev.mysql.com/downloads/ "MySQL Driver")
 - [Lombok](https://projectlombok.org/features/all "Lombok")
-- [DEA IntelliJ Community Edition](https://www.jetbrains.com/idea/ "IDEA IntelliJ Community Edition")
+- [IDEA IntelliJ Community Edition](https://www.jetbrains.com/idea/ "IDEA IntelliJ Community Edition")
 - [Postman](https://www.postman.com/ "Postman")
 - [asdf](https://github.com/asdf-vm/asdf "asdf")
 
