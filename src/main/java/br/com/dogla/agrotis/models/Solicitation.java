@@ -11,6 +11,8 @@ import javax.persistence.*;
 @Table(name = "solicitation")
 public class Solicitation {
         @Id
+        @SequenceGenerator(name = "solicitation_sequence", sequenceName = "solicitation_sequence", allocationSize = 1)
+        @GeneratedValue(strategy = GenerationType.SEQUENCE)
         @Column(name = "id", nullable = false)
         private Long id;
 

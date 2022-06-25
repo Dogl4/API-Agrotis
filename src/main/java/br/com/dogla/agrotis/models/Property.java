@@ -10,7 +10,8 @@ import javax.persistence.*;
 @Table(name = "property")
 public class Property {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @SequenceGenerator(name = "property_sequence", sequenceName = "property_sequence", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "property_sequence")
     @Column(name = "id", nullable = false)
     private Long id;
 
