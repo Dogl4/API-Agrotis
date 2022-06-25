@@ -14,6 +14,10 @@ public class PropertyService {
     @Autowired
     private IProperty iProperty;
 
+    public Property createProperty(Property property) {
+        return iProperty.save(property);
+    }
+
     public List<Property> listAllProperties() {
         return iProperty.findAll();
     }

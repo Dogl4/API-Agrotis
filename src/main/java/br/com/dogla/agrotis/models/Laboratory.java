@@ -1,10 +1,12 @@
 package br.com.dogla.agrotis.models;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 
 @Data
+@EqualsAndHashCode
 @Entity
 @Table(name = "laboratory" )
 public class Laboratory {

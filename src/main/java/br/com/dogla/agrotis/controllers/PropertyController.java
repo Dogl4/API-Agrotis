@@ -16,6 +16,12 @@ public class PropertyController {
     @Autowired
     private PropertyService propertyService;
 
+    @ResponseStatus(HttpStatus.CREATED)
+    @PostMapping(value = "")
+    public Property create(@RequestBody Property property) {
+        return propertyService.createProperty(property);
+    }
+
     @ResponseStatus(HttpStatus.OK)
     @RequestMapping(value = "", method = RequestMethod.GET)
     public List<Property> listAll() {
